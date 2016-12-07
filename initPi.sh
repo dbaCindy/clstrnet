@@ -7,3 +7,9 @@ cp ./initPi/etc/default/keyboard /etc/default/keyboard
 ./initGit.sh
 ./fetchGit.sh
 
+### Build wlan0 as AP
+cd ./buildAP
+./buildAP.sh
+cd ..
+
+
