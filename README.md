@@ -6,7 +6,7 @@ As root tun the following: (Use cut and paste since keyboard format may be in co
 ```
 git clone https://github.com/dbaCindy/clstrnet.git
 cd clstrnet
-chmod -R 700 ./clstrnet/*.sh
+chmod -R 700 ./*.sh
 ./initPi.sh
 ```
 
