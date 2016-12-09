@@ -12,4 +12,6 @@ cd ./buildAP
 ./buildAP.sh
 cd ..
 
+shutdown -r now
+
 
