@@ -9,6 +9,7 @@ apt-get -y install hostapd dnsmasq
 cp ./etc/dhcpcd.conf          /etc/dhcpcd.conf
 cp ./etc/network/interfaces   /etc/network/interfaces
 cp ./etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf
+cp ./etc/default/hostapd      /etc/default/hostapd
 cp ./etc/dnsmasq.conf         /etc/dnsmasq.conf
 cp ./etc/sysctl.conf           /etc/sysctl.conf
 
