@@ -10,7 +10,7 @@ cp ./etc/dhcpcd.conf          /etc/dhcpcd.conf
 cp ./etc/network/interfaces   /etc/network/interfaces
 cp ./etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf
 cp ./etc/dnsmasq.conf         /etc/dnsmasq.conf
-cp ./etc/systl.conf           /etc/sysctl.conf
+cp ./etc/sysctl.conf           /etc/sysctl.conf
 
 sysctl -w net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -o wlan1 -j MASQUERADE  
