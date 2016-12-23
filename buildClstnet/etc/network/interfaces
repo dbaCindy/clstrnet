@@ -23,6 +23,10 @@ iface wlan1 inet manual
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 allow-hotplug wlan2
-iface wlan2 inet manual
+iface wlan2 inet static  
+    address 10.10.1.10
+    netmask 255.255.255.0
+    network 10.10.1.0
+    broadcast 10.10.1.255
     wpa-conf /etc/wpa_supplicant/wpa_clstrnet01.conf
 
