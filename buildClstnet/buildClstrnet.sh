@@ -21,4 +21,5 @@ sh -c "iptables-save > /etc/iptables.ipv4.nat"
 cp ./etc/rc.local             /etc/rc.local
 
 service hostapd start 
-#service dnsmasq start 
+
+shutdown -r now
