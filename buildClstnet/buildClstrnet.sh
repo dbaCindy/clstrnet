@@ -6,11 +6,12 @@
 ### 
 
 apt-get -y install hostapd
-cp ./etc/dhcpcd.conf          /etc/dhcpcd.conf
-cp ./etc/network/interfaces   /etc/network/interfaces
-cp ./etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf
-cp ./etc/default/hostapd      /etc/default/hostapd
-cp ./etc/sysctl.conf           /etc/sysctl.conf
+cp ./etc/dhcpcd.conf                        /etc/dhcpcd.conf
+cp ./etc/network/interfaces                 /etc/network/interfaces
+cp ./etc/hostapd/hostapd.conf               /etc/hostapd/hostapd.conf
+cp ./etc/default/hostapd                    /etc/default/hostapd
+cp ./etc/sysctl.conf                        /etc/sysctl.conf
+cp ./etc/wpa_supplicant/wpa_clstrnet01.conf /etc/wpa_supplicant/wpa_clstrnet01.conf
 
 sysctl -w net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -o wlan1 -j MASQUERADE  
