@@ -11,12 +11,12 @@ iface lo inet loopback
 
 iface eth0 inet manual
 
-allow-hotplug wlan1
-iface wlan1 inet manual
+allow-hotplug wlan0
+iface wlan0 inet dhcp
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
-allow-hotplug wlan0  
-iface wlan0 inet static  
+allow-hotplug wlan1 
+iface wlan1 inet static  
     address 10.10.1.1
     netmask 255.255.255.0
     network 10.10.1.0
